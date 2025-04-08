@@ -1,0 +1,4 @@
+{
+    "python.defaultInterpreterPath": "${workspaceFolder}/flask_env/bin/python",
+    "python.analysis.extraPaths": ["${workspaceFolder}/flask_env/lib/python3.*/site-packages"]
+} 

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Service AI Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Customer Service AI Assistant</h1>
+            <div class="company-selector">
+                <select id="companySelect">
+                    <option value="AmazonHelp">Amazon Help</option>
+                    <option value="AppleSupport">Apple Support</option>
+                    <option value="SpotifyCares">Spotify Cares</option>
+                    <option value="Uber_Support">Uber Support</option>
+                </select>
+            </div>
+        </header>
+
+        <main>
+            <div class="chat-container">
+                <div class="chat-messages" id="chatMessages">
+                    <!-- Messages will be inserted here -->
+                </div>
+                <div class="input-area">
+                    <textarea 
+                        id="customerInput" 
+                        placeholder="Enter customer tweet here..."
+                        rows="3"
+                    ></textarea>
+                    <button id="submitBtn">Generate Response</button>
+                </div>
+            </div>
+
+            <div class="response-section">
+                <div class="response-options">
+                    <h3>Generated Response</h3>
+                    <div class="response-box" id="generatedResponse">
+                        <!-- Generated response will appear here -->
+                    </div>
+                    <div class="action-buttons">
+                        <button id="regenerateBtn" disabled>Regenerate</button>
+                        <button id="copyBtn" disabled>Copy Response</button>
+                    </div>
+                </div>
+
+                <div class="similar-tweets">
+                    <h3>Similar Conversations</h3>
+                    <div id="similarTweets" class="similar-tweets-container">
+                        <!-- Similar tweets will be inserted here -->
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Powered by OpenAI GPT</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,4 +1,5 @@
 pandas
 numpy
 flask
+flask-cors
 openai
